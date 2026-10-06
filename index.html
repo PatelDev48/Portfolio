@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Patel — Software Engineer</title>
+
+  <!-- Google Fonts: Space Grotesk + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAVIGATION ═══════════════════════════ -->
+  <header class="nav-wrapper">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Dev Patel home">
+        <span class="logo-bracket">&lt;</span>DP<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+          <i data-lucide="sun" class="icon-sun"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-outline nav-cta">Hire Me</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+    <section id="hero" class="hero-section" aria-label="Introduction">
+      <!-- Dot-grid ambient background -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Glow orbs -->
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow fade-up">Hello, I'm</p>
+        <h1 class="hero-name fade-up">Dev Patel</h1>
+        <div class="hero-typing-row fade-up" aria-live="polite">
+          <span class="typing-prefix">I build </span>
+          <span class="typing-text" id="typingText"></span>
+          <span class="typing-cursor" aria-hidden="true">|</span>
+        </div>
+        <p class="hero-sub fade-up">
+          Software Engineer at MAQ Software crafting AI-powered tools, full-stack platforms, 
+          and intelligent developer experiences.
+        </p>
+        <div class="hero-actions fade-up">
+          <a href="#projects" class="btn btn-primary">
+            <i data-lucide="folder-open"></i> View Work
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <i data-lucide="send"></i> Get in Touch
+          </a>
+        </div>
+
+        <!-- Quick stat chips -->
+        <div class="hero-stats fade-up">
+          <div class="stat-chip">
+            <span class="stat-num">8.68</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-num">Top 10</span>
+            <span class="stat-label">SIH 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#about" class="scroll-down" aria-label="Scroll to about section">
+        <i data-lucide="chevrons-down"></i>
+      </a>
+    </section>
+
+    <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-tag">Who I Am</span>
+          <h2 id="about-heading" class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text fade-up">
+            <p>
+              I'm a final-year Computer Science student at Nirma University and a Software Engineer at 
+              <strong>MAQ Software</strong>, where I focus on building AI-powered developer tools and 
+              productivity systems.
+            </p>
+            <p>
+              My work spans local LLM inference, full-stack web platforms, and agentic AI workflows. 
+              I love the intersection of developer experience and machine intelligence — making 
+              complex systems feel effortless for the people who use them.
+            </p>
+            <p>
+              Outside of work, I compete in hackathons, contribute to open-source projects, and 
+              experiment with lightweight LLMs on consumer hardware.
+            </p>
+            <div class="about-links">
+              <a href="mailto:dp484309@gmail.com" class="about-link">
+                <i data-lucide="mail"></i> dp484309@gmail.com
+              </a>
+              <a href="tel:+919898747584" class="about-link">
+                <i data-lucide="phone"></i> +91 9898747584
+              </a>
+            </div>
+          </div>
+
+          <div class="about-education fade-up">
+            <div class="edu-card">
+              <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+              <div class="edu-info">
+                <h3>B.Tech — Computer Science & Engineering</h3>
+                <p class="edu-uni">Nirma University, Ahmedabad</p>
+                <div class="edu-meta">
+                  <span class="tag">Aug 2022 – May 2026</span>
+                  <span class="tag tag-accent">CGPA: 8.68</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
+    <section id="experience" class="section section-alt" aria-labelledby="exp-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-tag">Where I've Worked</span>
+          <h2 id="exp-heading" class="section-title">Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Engineer</h3>
+                  <p class="timeline-company">
+                    <i data-lucide="building-2"></i> MAQ Software
+                  </p>
+                </div>
+                <span class="timeline-date">
+                  <i data-lucide="calendar"></i> Jan 2026 – Present
+                </span>
+              </div>
+              <ul class="timeline-bullets" role="list">
+                <li>Built a local AI coding assistant inside VS Code using Ollama with QwenCoder 1B, integrating Continue extension and GitHub Copilot CLI-style workflows for offline AI-assisted development.</li>
+                <li>Integrated Speckit for contextual AI-assisted developer productivity — enabling in-editor AI chat, terminal-based assistance, debugging support, and workflow automation.</li>
+                <li>Explored local inference optimization, prompt engineering, and latency improvements for lightweight LLMs on consumer hardware.</li>
+                <li>Developed a Power BI dashboard to monitor GitHub Copilot usage, analyze developer productivity metrics, usage trends, and workflow insights.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">VS Code</span>
+                <span class="tag">Ollama</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">LLMs</span>
+                <span class="tag">Prompt Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="achievements-grid">
+          <h3 class="achievements-title fade-up">Achievements</h3>
+          <div class="ach-cards">
+
+            <div class="ach-card fade-up">
+              <div class="ach-icon"><i data-lucide="trophy"></i></div>
+              <div>
+                <h4>Smart India Hackathon 2023</h4>
+                <p>Top 10 at university level — proposed a full-stack waste management solution using React, Firebase, and Node.js.</p>
+              </div>
+            </div>
+
+            <div class="ach-card fade-up">
+              <div class="ach-icon"><i data-lucide="zap"></i></div>
+              <div>
+                <h4>MINeD Hackathon 2025</h4>
+                <p>Built InsightScribe with Cactus AI at a national hackathon to auto-summarize documents and generate presentations and podcasts.</p>
+              </div>
+            </div>
+
+            <div class="ach-card fade-up">
+              <div class="ach-icon"><i data-lucide="award"></i></div>
+              <div>
+                <h4>The Web Developer Bootcamp</h4>
+                <p>Udemy certification covering the full MERN stack, databases, authentication, and dynamic web applications.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-tag">What I Know</span>
+          <h2 id="skills-heading" class="section-title">Tech Stack</h2>
+        </div>
+
+        <div class="skills-wrapper">
+
+          <div class="skill-group fade-up">
+            <h3 class="skill-group-title">
+              <i data-lucide="code-2"></i> Languages
+            </h3>
+            <div class="skill-badges">
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">C</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">Python</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-up">
+            <h3 class="skill-group-title">
+              <i data-lucide="layers"></i> Full Stack
+            </h3>
+            <div class="skill-badges">
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Express.js</span>
+              <span class="skill-badge">React.js</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">.NET</span>
+              <span class="skill-badge">REST API</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-up">
+            <h3 class="skill-group-title">
+              <i data-lucide="brain"></i> AI / ML
+            </h3>
+            <div class="skill-badges">
+              <span class="skill-badge badge-accent">Machine Learning</span>
+              <span class="skill-badge badge-accent">NLP</span>
+              <span class="skill-badge badge-accent">Agentic AI</span>
+              <span class="skill-badge badge-accent">LLMs</span>
+              <span class="skill-badge badge-accent">Prompt Engineering</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-up">
+            <h3 class="skill-group-title">
+              <i data-lucide="wrench"></i> Tools
+            </h3>
+            <div class="skill-badges">
+              <span class="skill-badge">Git / GitHub</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Power BI</span>
+              <span class="skill-badge">Postman</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-up">
+            <h3 class="skill-group-title">
+              <i data-lucide="cpu"></i> CS Fundamentals
+            </h3>
+            <div class="skill-badges">
+              <span class="skill-badge">DSA</span>
+              <span class="skill-badge">OOP</span>
+              <span class="skill-badge">OS</span>
+              <span class="skill-badge">DBMS</span>
+              <span class="skill-badge">Computer Networks</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-tag">What I've Built</span>
+          <h2 id="projects-heading" class="section-title">Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Code-Sync -->
+          <article class="project-card fade-up" aria-label="Code-Sync project">
+            <div class="project-glow" aria-hidden="true"></div>
+            <div class="project-header">
+              <div class="project-icon"><i data-lucide="git-branch"></i></div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub repo">
+                  <i data-lucide="github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live demo">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Code-Sync</h3>
+            <p class="project-desc">
+              AI-enabled real-time collaborative coding platform supporting 15+ concurrent users 
+              with sub-100ms latency. Features live code editing, group chat, shared drawing canvas, 
+              an AI Copilot for code generation, and execution support for 40+ languages.
+            </p>
+            <div class="project-highlights">
+              <span class="highlight"><i data-lucide="users"></i> 15+ concurrent users</span>
+              <span class="highlight"><i data-lucide="zap"></i> &lt;100ms latency</span>
+              <span class="highlight"><i data-lucide="trending-up"></i> 20% efficiency boost</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">Socket.io</span>
+              <span class="tag">Google API</span>
+              <span class="tag">WebSockets</span>
+            </div>
+          </article>
+
+          <!-- InsightScribe -->
+          <article class="project-card fade-up" aria-label="InsightScribe project">
+            <div class="project-glow" aria-hidden="true"></div>
+            <div class="project-header">
+              <div class="project-icon"><i data-lucide="file-text"></i></div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub repo">
+                  <i data-lucide="github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live demo">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">InsightScribe</h3>
+            <p class="project-desc">
+              AI research assistant that auto-generates summaries, podcasts, and presentation slides 
+              from academic PDFs. Tested across 50+ research papers spanning AI, Biology, and Engineering.
+            </p>
+            <div class="project-highlights">
+              <span class="highlight"><i data-lucide="clock"></i> 80% time saved</span>
+              <span class="highlight"><i data-lucide="file"></i> 50+ papers tested</span>
+              <span class="highlight"><i data-lucide="mic"></i> Podcast generation</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Gemini 1.5 Flash</span>
+              <span class="tag">LLaMA 3.3</span>
+            </div>
+          </article>
+
+          <!-- Student LMS -->
+          <article class="project-card fade-up" aria-label="Student LMS Portal project">
+            <div class="project-glow" aria-hidden="true"></div>
+            <div class="project-header">
+              <div class="project-icon"><i data-lucide="book-open"></i></div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub repo">
+                  <i data-lucide="github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live demo">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Student LMS Portal</h3>
+            <p class="project-desc">
+              Full-stack Learning Management System managing attendance, academic records, and class 
+              schedules for 100+ mock student entries. Streamlines teacher and student task tracking 
+              through clear academic dashboards.
+            </p>
+            <div class="project-highlights">
+              <span class="highlight"><i data-lucide="users"></i> 100+ students</span>
+              <span class="highlight"><i data-lucide="database"></i> 40% faster retrieval</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Express.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">EJS</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-tag">Let's Talk</span>
+          <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+          <p class="section-sub fade-up">
+            Open to new opportunities, collaborations, or just a good conversation about AI and code.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-info fade-up">
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div>
+                <p class="contact-label">Email</p>
+                <a href="mailto:dp484309@gmail.com" class="contact-value">dp484309@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div>
+                <p class="contact-label">Phone</p>
+                <a href="tel:+919898747584" class="contact-value">+91 9898747584</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <p class="contact-label">Location</p>
+                <span class="contact-value">Ahmedabad, Gujarat, India</span>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="mailto:dp484309@gmail.com" class="social-link" aria-label="Email">
+                <i data-lucide="mail"></i>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form fade-up" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="What's it about?" required />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project or opportunity..." required rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i data-lucide="send"></i> Send Message
+            </button>
+            <p class="form-success" id="formSuccess" aria-live="polite" hidden>
+              Message sent! I'll get back to you soon.
+            </p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">
+        <span class="logo-bracket">&lt;</span>DP<span class="logo-bracket">/&gt;</span>
+      </span>
+      <p class="footer-copy">© 2025 Dev Patel. Built with care and curiosity.</p>
+      <div class="footer-social">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i data-lucide="github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
